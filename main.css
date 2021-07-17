@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+    background-color: #5ca0f2;
+    background-image: linear-gradient(315deg, #5ca0f2 0%, #f5f7f6 74%); 
+    background-repeat: no-repeat;
+}
+#main, #addNote {
+    background-color: #5ca0f2;
+}
+
+
+.addNoteView {
+    display: none;
+}
+input[type=search]:focus {
+    outline-offset: 0
+}
+
+h2 {
+    color: #111;
+    cursor: pointer;
+}
+
+.calc-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row {
+    justify-content: space-between;
+}
+.col-4 {
+    width: 30%;
+}
+
+.red {
+    background: red !important;
+}

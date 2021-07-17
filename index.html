@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="nav">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar py-5">
+                    <div class="col-3">
+                    <h2 class="notes-view">Your notes is here</h2>
+                    </div>
+                    <div class="col-3">
+                        <input type="search" placeholder="Search" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <button id="add-note" class="btn btn-warning form-control">Add note</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="container">
+            <div class="row mainView">
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="addNote">
+        <div class="container">
+            <div class="row addNoteView">
+                <div class="col-4 py-5">
+                    <div class="card">
+                        <div class="card-header text-center py-3">
+                        <input type="text" name="title" placeholder="Enter title.." class="form-control">
+                        </div>
+                        <div class="card-header calc-2 text-center py-3">
+                            <div class="col-6">
+                                <input type="date" class="form-control" name="date" format="dd/mm/yyyy">
+                            </div>
+                            <div class="col-5">
+                                <input type="time" class="form-control" name="time" twelvehour=true>
+                            </div>
+                        </div>
+                        <div class="card-body py-4">
+                        <textarea name="text-area" rows="10" class="form-control"></textarea>
+                        </div>
+                        <div class="card-footer py-3">
+                            <div class="col-12">
+                                <button id="save-btn" class="btn btn-warning form-control">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
